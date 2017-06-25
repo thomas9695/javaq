@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>slider demo</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="header">
+    <h1>jQuery Mobile Example</h1>
+</div>
+<div role="main" class="ui-content">
+    <p>Kies een hoeveelheid</p>
+    <input type="range" name="rangeInput" min="0" max="100" onchange="updateTextInput( this.value * 2);">
+    <P>De prijs in euro's</P>
+    <input type="text" id="textInput1" value="">
+    <a href="kopen.html" role="button" id="textInput" class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-transition="slidedown">Kopen</a>
+
+    <script>
+
+
+        $( "#textInput" ).click(function(){
+            window.location.replace("kopen.html");
+             } ) ;
+
+
+
+
+
+    </script>
+
+</div>
+</body>
+</html>
